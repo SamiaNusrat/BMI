@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health is Wealth</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+<body>
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg sticky-top nav">
+        <div class="container-fluid ms-5 p-2">
+        <a class="navbar-brand signature" href="#"><img class="nav-img" src="main.jpg" alt="logo" width="130px" height="60px">
+        Health is Wealth</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav ms-3 column-gap-3">
+                <a class="nav-link active navText" aria-current="page" href="#">Home</a>
+                <a class="nav-link active navText" href="#bmi">BMI</a>
+                <a class="nav-link navText" href="Weight Gain.html">Weight Gain</a>
+                <a class="nav-link navText" href="Weight Loss.html">Weight Loss</a>
+                <a class="nav-link navText" href="#about">About Us</a>               
+            </div>
+            <div  class="d-flex justify-content-end ms-5 p-3 border-start border-secondary border-end">
+                <a href="#"><img class="ms-2 nav-logos" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="logo" height="30px" width="30px"></a>
+                <a href="#"><img class="ms-3 nav-logos" src="https://i.pinimg.com/originals/39/38/6d/39386d212ac9a4626cd4f3fb25466503.png" alt="logo" height="30px" width="30px"></a>
+                <a href="#"><img class="ms-3 nav-logos" src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="logo" height="25px" width="30px"></a>
+                <a href="#"><img class="ms-3 nav-logos" src="data:image/png;base64,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" alt="logo" height="25px" width="30px"></a>
+                <a href="#"><img class="ms-3 nav-logos" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="logo" height="30px" width="30px"></a>
+
+            </div>
+
+            <div class="ms-5">
+                <a  href="sign in.html"><button class="btn btn-outline-secondary nav-btn"><span class="border-end"><img src="https://static.thenounproject.com/png/801408-200.png" alt="login logo" width="30px"></span>
+                    Sign In</button></a>
+                <a href="#"><button class="btn btn-outline-secondary nav-btn"><span class="border-end"><img src="https://cdn.icon-icons.com/icons2/2622/PNG/512/gui_user_plus_icon_158351.png" alt="sign up logo" width="30px"></span>
+                    Sign Up</button></a>
+                
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!--Hero image-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center img-comp-container">
+                <div class="img-comp-img">
+                    <img class="ms-5 p-5" src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2647979.jpg" alt="bmi" height="650px">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <!-- <img class="ms-5 p-5" src="https://www.shutterstock.com/image-vector/body-mass-index-poster-woman-600nw-1908255625.jpg" alt="bmi" height="650px"> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Hero Section-->
+    <div class="container-fluid bg" id="bmi">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-lg-8 col-sm-12">
+                <h1 class="mt-5">BMI Calculator</h1>
+                <h5 class="fw-lighter">Body Mass Index</h5><br>
+                <div class="row g-5">      
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="row">
+                            <div class="col-12 form-check">   
+                                <!--Gender-->                         
+                                <h5>Gender</h5>
+                                <div>
+                                    <label class="ms-2" for="Male">Male</label>
+                                    <input class="ms-2 form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked type="radio"></div>
+                                    <label class="ms-2" for="female">Female</label>
+                                    <input class="ms-2 form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked type="radio">
+                            </div>
+                        </div>
+
+                        <!--Height-->
+                        <div class="row mt-5">
+                            <h5 class="">Height</h5>
+                            <input placeholder="Enter Your Height in Meter..." class="form-control" id="height" type="number" required>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="row d-flex align-items-center">
+                            <!--Age-->
+                            <div class="slider">
+                                <label for="customRange1" class="form-label"><h5>Age</h5></label>
+                                <input type="range" class="form-range Age" id="customRange1" min="2" max="120" values="0">    
+                            </div>
+                            <div class="text-center value"><h3>0</h3></div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <!--Weight-->
+                            <h5>Weight</h5>
+                            <input placeholder="Enter Your Weight in ..." class="form-control" id="weight" type="number" required>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 border-start border-secondary">
+                        <!--Result-->
+                        <h4 id="result">Here is your BMI...</h4><br>
+                        <div id="suggestion"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <button class="btn btn-outline-secondary" id="btn">Calculate</button>
+    </div>
+<br><br>
+    <!--BMI Intro-->
+    <div class="container">
+        <h3 class="border-bottom border-primary h3-text">What is Health?</h3>
+        <p>When we say the word ‘health’, what do we mean by it? As per the WHO (World Health Organisation), health is referred to the state of full mental, social and physical well-being and not just the absence of mental or physical weakness or illness. When a person doesn’t have any physical ailments and isn’t mentally disturbed, then they can be said to be in their best health. People usually try to stay healthy but, due to the recent pandemic, it’s becoming difficult to maintain one’s health.</p>
+        <p>
+            <h3 class="border-bottom border-primary h3-text">How Should One Take Care of Their Health?</h3>
+            The spread of the corona virus over the past two years has made it difficult for everyone to maintain their health. Though this is the case, one should try to follow some simple ways that will help them keep their bodies and minds healthy. Let’s look at some ways that anyone can follow:
+        <ul>
+            <li>Try including some physical exercises/yoga in your routine. They not only prove to be beneficial for the body but also for the mind. For the past two years, offices, as well as schools and colleges, have been functioning online. As a result, many students and young people have developed backaches and posture problems. Adding at least half an hour of yoga/exercise to your daily routine will help you overcome these problems.</li>
+            <li>In today’s world, everybody is engrossed in their mobiles or laptops, and there’s very little time they spend without it. Sometimes, it is necessary to take a break from all these electronic and smart devices. This will help us maintain proper physical and mental health.</li>
+            <li>Try to avoid processed or fried foods and make sure that your plates include enough vegetables and fruits. A healthy platter does wonders for one’s health.</li>
+        </ul></p>
+
+        <h3 class="border-bottom border-primary h3-text">Introduction to BMI</h3>
+        <p>Body Mass Index (BMI) is widely used as an indicator of body fat content. Your weight alone is not sufficient to establish if you are in a healthy weight range. For example, a tall but slender person can weigh more than a short but plump individual. But the former may enjoy better health as long as their weight is suitable for their height. The ideal weight is also likely to differ for men and women of similar heights.
+            How then do you know whether you fall in the healthy weight range or not? Your BMI solves this confusion. It correlates your weight with your height and evaluates whether your weight is appropriate for your stature. You can use a BMI calculator to find out your BMI.
+            Although not an exact measurement of body fat percentage, in most cases, BMI is a reliable tool for establishing risk levels for illnesses, especially ailments related to excess body fat. Many healthcare professionals use BMI to determine effective doses for medicines. Often people with a higher BMI need higher doses. Hence, it is crucial to be aware of your BMI to ensure your overall wellness.</p>
+        
+        <h3 class="border-bottom border-primary h3-text">How to calculate BMI</h3>
+        <p>If you want to calculate your BMI, you have to find out your weight and height first. Once you know these values, you can arrive at the result by following the two steps mentioned below:</p>
+        <ol class="orderList">
+            <li>Multiply your height by itself (height X height).</li>
+            <li>Divide your weight by the answer you get in the first step.</li>
+        </ol>
+
+        <p>The equations for calculating the BMI are as follows:</p>
+        <p>International System of Units (SI)</p>
+        <h6>BMI = weight (kg) ÷ (height (m))2</h6>
+        <p>Example:<br>
+            For a 177 cm (1.77 m) individual weighing 75 kg,<br>
+            BMI = 75 / (1.77 * 1.77) = 75/ 3.13 = 23.96</p>
+    </div>
+
+    <!--Footer Head-->
+    <div class="container-fluid" id="about">
+        <div class="row">
+            <div class="col-12 footer-head-bg">
+                <h1 class="text-center">Health is Wealth</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer-bg">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center mt-4">
+                        <a class="border-end border-secondary p-2 footer-text" href="#">Info</a>
+                        <a class="border-end border-secondary p-2 footer-text" href="#">Suport</a>
+                        <a class="p-2 footer-text" href="#">Market</a>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                <div class="row mt-3">
+                    <a class="text-center footer-text" href="terms use.text">Terms of Use</a>
+                </div>
+                <div class="row mt-3">
+                    <p class="text-center fw-lighter">Copyright@ 2024 Samia Nusrat</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
